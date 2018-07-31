@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
+</head>
+
+<body class="text-center">
+
+<br/><br/><br/><br/><br/>
+<h2><font face="futura" class="font-weight-bold">Subscribe below</font></h2>
+<br/><br/>
+
+<%= form_for @user, url: {action: "create2"} do |f| %>
+	<p size="10pt" face="futura" class="font-weight-bold">Username</p>
+	<%= f.text_field :username, class: 'col-sm-2' %>
+	<br/><br/>
+	<p size="10pt" face="futura" class="font-weight-bold">Email</p>
+	<%= f.text_field :email, class: 'col-sm-2' %>
+	<br/><br/>
+	<p size="10pt" face="futura" class="font-weight-bold">Biography</p>
+	<%= f.text_area :bio, class: 'col-sm-2' %>
+	<br/><br/>
+	<%= f.submit "Create", class: 'btn btn-secondary btn-sm' %>
+<% end %>
+
+<br/><br/><br/><br/><br/><br/><br/>
+
+	<div class="d-flex justify-content-between">
+	<a href="/firstform" class="btn btn-secondary btn-sm " role="button" >First Form</a>
+	<a href="/" class="btn btn-secondary btn-sm " role="button" >Home</a>
+	<a href="/secondform" class="btn btn-secondary btn-sm " role="button" >Second Form</a>
+	</div>
+
+</body>
+
+</html>

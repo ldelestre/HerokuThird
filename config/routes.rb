@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-	# For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 	get '/', to: 'static_pages#home'
-	get '/new', to: 'users#new'
-	post '/new', to: 'users#create'
+	get '/firstform',  to: 'users#new1'
+	post '/firstform', to: 'users#create'
+	get '/secondform',  to: 'users#new2'
+	post '/secondform', to: 'users#create'
+	get '/thirdform',  to: 'users#new3'
+	post '/thirdform', to: 'users#create2'
 end

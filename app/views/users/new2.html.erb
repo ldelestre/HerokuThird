@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
+</head>
+
+<body class="text-center">
+<center>
+	
+
+<br/><br/><br/><br/><br/>
+<h2><font face="futura" class="font-weight-bold">Subscribe below</font></h2>
+<br/><br/>
+
+<%= form_tag url_for(action: 'create'), method: "post" do %>
+	<%= label_tag 'Username', nil, class: 'font-weight-bold'%>
+	<br />
+	<%= text_field_tag 'username', nil, class: 'col-sm-2' %>
+	<br /> <br />
+	<%= label_tag 'Email', nil, class: 'font-weight-bold'%>
+	<br />
+	<%= text_field_tag 'email', nil, class: 'col-sm-2' %>
+	<br /> <br />
+	<%= label_tag 'Biography', nil, class: 'font-weight-bold'%>
+	<br />
+	<%= text_area_tag 'bio', nil, class: 'col-sm-2' %>
+	<br /> <br />
+	<%= submit_tag "Create", class: 'btn btn-secondary btn-md' %>
+<% end %>
+
+<br/><br/><br/><br/><br/><br/><br/>
+
+	<div class="d-flex justify-content-between">
+	<a href="/firstform" class="btn btn-secondary btn-sm " role="button" >First Form</a>
+	<a href="/" class="btn btn-secondary btn-sm " role="button" >Home</a>
+	<a href="/thirdform" class="btn btn-secondary btn-sm " role="button" >Third Form</a>
+	</div>
+
+</center>
+</body>
+
+</html>
