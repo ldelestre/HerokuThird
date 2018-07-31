@@ -1,4 +1,4 @@
-## Version ruby
+## Ruby on Rails version
 
 Ruby '2.5.1'
 
