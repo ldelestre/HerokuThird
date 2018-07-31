@@ -1,24 +1,35 @@
-# README
+## Version ruby
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby '2.5.1'
+Rails '5.2.0'
 
-Things you may want to cover:
 
-* Ruby version
+## Heroku Link: https://appforms.herokuapp.com/
 
-* System dependencies
 
-* Configuration
+## Steps:
+```
+$ bundle install --without production
+```
+```
+$ rails db:migrate
+```
+```
+$ rails server
+```
 
-* Database creation
+### Open your browser and launch
+```
+$ localhost:3000
+```
 
-* Database initialization
+### If it doesn't work
+```
+$ rails server -p 4567
+```
+#### Launch
+```
+$ localhost:4567
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Louis Delestre
