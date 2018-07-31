@@ -1,2 +1,15 @@
 <h1>Creation</h1>
-<p>You're about to create a new user</p>s
+
+<p>You're about to create a new user</p>
+
+<form action ='/new' method ='post'>
+	
+	<input type="text" name="Username"></br></br>
+	<input type="text" name="Email"></br></br>
+	<textarea name = 'Bio'></textarea></br></br>
+
+
+	<input type = 'submit' name = 'Create'>
+	<input type = 'hidden' name = 'authenticity_token' value='<%= form_authenticity_token %>'>
+	
+</form
