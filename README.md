@@ -4,7 +4,7 @@ Ruby '2.5.1'
 Rails '5.2.0'
 
 
-## Heroku Link: https://appforms.herokuapp.com/
+## Heroku : https://appforms.herokuapp.com/
 
 
 ## Steps:
@@ -18,18 +18,20 @@ $ rails db:migrate
 $ rails server
 ```
 
-### Open your browser and launch
+## Open your browser and launch
 ```
 $ localhost:3000
 ```
 
-### If it doesn't work
+## If it doesn't work
 ```
 $ rails server -p 4567
 ```
-#### Launch
+## Launch
 ```
 $ localhost:4567
 ```
 
-Louis Delestre
+
+
+## Louis Delestre
